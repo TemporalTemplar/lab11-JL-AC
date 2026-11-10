@@ -20,6 +20,24 @@ def div(a, b): # raise ZeroDivisionError if a == 0
         raise ZeroDivisionError
     return b / a
 
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+
+def logarithm(a, b):
+    try:
+        return math.log(a, b)
+    except ValueError:
+        return "Cannot calculate logarithm of non-positive numbers"
+
+def exponent(a, b):
+    return a ** b
 
 def log(a, b): # use math library + raise ValueError
     if a <= 0 or a == 1 or b <= 0:
