@@ -1,3 +1,7 @@
+# https://github.com/TemporalTemplar/lab11-JL-AC
+# Partner 1: Jefferson Li
+# Partner 2: Andrew Chen
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -32,7 +36,7 @@ def div(a, b): # raise ZeroDivisionError if a == 0
 
 def logarithm(a, b):
     try:
-        return math.log(a, b)
+        return math.log(b, a)
     except ValueError:
         return "Cannot calculate logarithm of non-positive numbers"
 
