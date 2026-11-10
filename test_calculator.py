@@ -1,3 +1,7 @@
+# https://github.com/TemporalTemplar/lab11-JL-AC
+# Partner 1: Jefferson Li
+# Partner 2: Andrew Chen
+
 import unittest
 from calculator import *
 
@@ -24,9 +28,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mul(-2, 3), -6)
 
     def test_divide(self): # 3 assertions
-        self.assertEqual(div(9, 3), 3)
-        self.assertEqual(div(0, 5), 0)
-        self.assertEqual(div(-9, 3), -3)
+        self.assertEqual(div(3, 9), 3)
+        self.assertEqual(div(5, 0), 0)
+        self.assertEqual(div(3, -9), -3)
     # ##########################
 
     ####### Partner 2
@@ -43,13 +47,13 @@ class TestCalculator(unittest.TestCase):
     def test_log_invalid_base(self):  # 1 assertion
         # use same technique from test_divide_by_zero
         with self.assertRaises(ValueError):
-            logarithm(-1, 2)
+            logarithm(-1, 3)
     ##########################
 
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ValueError):
-            logarithm(0, 5)
+            logarithm(10, 0)
 
 
     def test_hypotenuse(self): # 3 assertions
